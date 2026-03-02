@@ -70,7 +70,6 @@ const skillsData = {
     'Microsoft Teams',
     'Zoom',
     'Google Drive / OneDrive',
-    'Discord',
     'VSCode',
     'IVMS',
   ],
