@@ -105,7 +105,7 @@ const translations = {
     database: 'Base de données',
     autres: 'Autres',
     langages: 'Langages de programmation',
-    viewProject: 'Voir le projet',
+    viewProject: 'Découvrir le projet',
   },
   en: {
     nav: ['About', 'Skills', 'Services', 'Software', 'Projects', 'Certificates', 'Experience', 'Contact'],
@@ -135,7 +135,7 @@ const translations = {
     database: 'Database',
     autres: 'Others',
     langages: 'Programming Languages',
-    viewProject: 'View project',
+    viewProject: 'Discover the project',
   }
 };
 
@@ -309,7 +309,7 @@ function ProjectCard({ title, description, icon: Icon, color, index, link, tags,
           {link && !images && (
             <div className="mt-4 pt-4 border-t border-slate-700">
               <span className="text-blue-400 text-sm flex items-center gap-2">
-                Voir le projet <span className="group-hover:translate-x-1 transition-transform">→</span>
+                Découvrir le projet <span className="group-hover:translate-x-1 transition-transform">→</span>
               </span>
             </div>
           )}
