@@ -306,7 +306,7 @@ function ProjectCard({ title, description, icon: Icon, color, index, link, tags,
               ))}
             </div>
           )}
-          {link && !images && (
+          {link && (
             <div className="mt-4 pt-4 border-t border-slate-700">
               <span className="text-blue-400 text-sm flex items-center gap-2">
                 Découvrir le projet <span className="group-hover:translate-x-1 transition-transform">→</span>
