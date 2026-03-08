@@ -638,7 +638,7 @@ export default function Portfolio() {
           <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="text-4xl font-bold mb-8"><span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">{t.contact}</span></h2>
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-              <a href="https://www.linkedin.com/in/modibo-traore-5b935a217/" target="_blank" className="flex items-center gap-3 px-6 py-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+              <a href="https://www.linkedin.com/in/modibo-traore-8958a8284/" target="_blank" className="flex items-center gap-3 px-6 py-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
                 <FaLinkedin className="text-xl text-blue-400" /><span>LinkedIn</span>
               </a>
               <a href="tel:+22392022099" className="flex items-center gap-3 px-6 py-3 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
