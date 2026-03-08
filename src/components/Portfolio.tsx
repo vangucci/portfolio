@@ -220,12 +220,14 @@ const projects = [
 ];
 
 const certificates = [
+  { title: 'IT Customer Support Basics', link: 'https://www.credly.com/badges/2346ee2f-2b61-4dee-b956-9f0adae5b282/' },
+  { title: 'Digital Awareness', link: 'https://www.credly.com/badges/0441fc69-86fc-4290-9385-bff8f0f5bf91/' },
+  { title: 'Ethical Hacker', link: 'https://www.credly.com/badges/93f25ebe-b122-4540-8f52-8cae1e9963c1/' },
   { title: 'AWS Foundations - Premiers pas avec les éléments essentiels du nuage', file: '/certificats/Certificats/AWS Foundations  Premiers pas avec les elements essentiels du nuage AWS (Français)  AWS Foundations_ Getting Started with the AWS Cloud Essentials (French)_AWS Course Completion Certificate.pdf' },
   { title: 'Cloud Essentials Learning Plan', file: '/certificats/Certificats/Cloud Essentials Learning Plan (French)_AWS Learning Plan Completion Certificate.pdf' },
   { title: 'Computer Hardware Basics', file: '/certificats/Certificats/Computer_Hardware_Basics_Badge20241210-28-5z3vgl.pdf' },
   { title: 'Creating Digital Content', file: '/certificats/Certificats/CreatingDigitalContent20250107-25-iuf8sb.pdf' },
   { title: 'Démarrer avec l\'acquisition dans le nuage', file: '/certificats/Certificats/Démarrer avec l\'acquisition dans le nuage (Français) | Getting Started with Cloud Acquisition (French)_AWS Course Completion Certificate.pdf' },
-  { title: 'Digital Awareness', file: '/certificats/Certificats/DigitalAwareness20250106-27-1dgrlt.pdf' },
   { title: 'Gestion de la facturation et des coûts AWS', file: '/certificats/Certificats/Gestion de la facturation et des coûts AWS_AWS Course Completion Certificate.pdf' },
   { title: 'Introduction to Cybersecurity', file: '/certificats/Certificats/Introduction_to_Cybersecurity_Badge20241210-27-bdzuum.pdf' },
   { title: 'Introduction to Data Science', file: '/certificats/Certificats/Introduction_to_Data_Science_Badge20241210-26-x7pury.pdf' },
@@ -594,7 +596,7 @@ export default function Portfolio() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
               {certificates.map((cert, i) => (
-                <a key={i} href={cert.file} target="_blank" rel="noopener noreferrer">
+                <a key={i} href={cert.link || cert.file} target="_blank" rel="noopener noreferrer">
                   <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }} viewport={{ once: true }} whileHover={{ scale: 1.02 }} className="bg-slate-800/50 rounded-xl p-4 border border-slate-700 hover:border-blue-400 transition-colors">
                     <div className="flex items-center gap-3">
                       <FaCertificate className="text-blue-400 text-xl flex-shrink-0" />
